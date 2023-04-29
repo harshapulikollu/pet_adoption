@@ -12,13 +12,13 @@ class HomeCubit extends Cubit<HomeState> {
   HomeCubit({
     required this.getPetsProvider,
 }) : super(HomeInitial()) {
-    getPets();
+    getPets(0, filterString: '');
   }
 
-  Future<void> getPets() async{
+  Future<void> getPets(int pageIndex, {String? filterString}) async{
     emit(HomeLoading());
     try{
-      final response  = await getPetsProvider.getPets();
+      final response  = await getPetsProvider.getPets(pageIndex, filterString: filterString);
       emit(HomeLoadedSuccessfully(responseApi: response));
     }catch(e){
       emit(HomeLoadingFailed());

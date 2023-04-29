@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:neopop/neopop.dart';
 import 'package:pet_adoption_hn/cubit/home_cubit.dart';
 import 'package:pet_adoption_hn/widgets/custom_card.dart';
 
-import '../utils/colors.dart';
 import '../widgets/custom_text.dart';
 import '../widgets/list_item.dart';
 
@@ -63,7 +61,7 @@ class HomePage extends StatelessWidget {
                 final pets = state.responseApi;
                 return RefreshIndicator(
                   onRefresh: () async {
-                    context.read<HomeCubit>().getPets();
+                    context.read<HomeCubit>().getPets(0, filterString: '');
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
@@ -71,13 +69,18 @@ class HomePage extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        const CustomCard(
+                         CustomCard(
                           child: Padding(
-                            padding: EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(8.0),
                             child: TextField(
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                   hintText: 'Search',
-                                  prefixIcon: Icon(Icons.search)),
+                                  prefixIcon: Icon(Icons.search),),
+                              onChanged: (String? text){
+                                if(text != null && text.length > 2){
+                                  context.read<HomeCubit>().getPets(0, filterString: text ?? '');
+                                }
+                              },
                             ),
                           ),
                         ),

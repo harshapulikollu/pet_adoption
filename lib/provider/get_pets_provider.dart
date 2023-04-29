@@ -9,8 +9,8 @@ class GetPetsImp extends GetPetsProviderInterface {
     required this.getPetsRepository,
 });
   @override
-  Future<List<Pet>> getPets() async{
-    final response = await getPetsRepository.getPets();
+  Future<List<Pet>> getPets(int pageIndex, {String? filterString}) async{
+    final response = await getPetsRepository.getPets(pageIndex, filterString: filterString);
     return response;
   }
 

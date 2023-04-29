@@ -1,144 +1,29 @@
 import 'package:pet_adoption_hn/repository/get_pets_repository_interface.dart';
 
 import '../model/pet.dart';
+import '../utils/fake_pets_data.dart';
 
 class GetPetsRepositoryImp extends GetPetsInterface {
-  List<Pet> pets = [];
+
   @override
-  Future<List<Pet>> getPets() async{
-   final _pets = Pets.fromMap({"pets": [
-      {
-        "id": 1,
-        "type": "Dog",
-        "species": "Dog",
-        "breeds": {
-          "primary": "Akita",
-          "secondary": null,
-          "mixed": false,
-          "unknown": false
-        },
-        "colors": {
-          "primary": null,
-          "secondary": null,
-          "tertiary": null
-        },
-        "age": "Young",
-        "gender": "Male",
-        "size": "Medium",
-        "coat": null,
-        "attributes": {
-          "spayed_neutered": false,
-          "house_trained": true,
-          "declawed": null,
-          "special_needs": true,
-          "shots_current": false
-        },
-        "environment": {
-          "children": false,
-          "dogs": false,
-          "cats": false
-        },
-        "tags": [
-          "Cute",
-          "Intelligent",
-          "Large",
-          "Playful",
-          "Happy",
-          "Affectionate"
-        ],
-        "name": "Spot",
-        "description": "Spot is an amazing dog",
-        "photos": [
-          {
-            "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-            "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-            "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-            "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
-          }
-        ],
-        "status": "adoptable",
-        "published_at": "2018-12-22T20:31:32+0000",
-        "contact": {
-          "email": "petfindertechsupport@gmail.com",
-          "phone": "111-333-5555, 222-333-5555, 333-333-5353, 111-333-2222",
-          "address": {
-            "address1": "Test address 1",
-            "address2": "Test address 2",
-            "city": "Jersey City",
-            "state": "NJ",
-            "postcode": "07097",
-            "country": "US"
-          }
-        },
-        "price": "free"
-      },
-     {
-       "id": 2,
-       "type": "Dog",
-       "species": "Dog",
-       "breeds": {
-         "primary": "Akita",
-         "secondary": null,
-         "mixed": false,
-         "unknown": false
-       },
-       "colors": {
-         "primary": null,
-         "secondary": null,
-         "tertiary": null
-       },
-       "age": "Young",
-       "gender": "Male",
-       "size": "Medium",
-       "coat": null,
-       "attributes": {
-         "spayed_neutered": false,
-         "house_trained": true,
-         "declawed": null,
-         "special_needs": true,
-         "shots_current": false
-       },
-       "environment": {
-         "children": false,
-         "dogs": false,
-         "cats": false
-       },
-       "tags": [
-         "Cute",
-         "Intelligent",
-         "Large",
-         "Playful",
-         "Happy",
-         "Affectionate"
-       ],
-       "name": "Sophie",
-       "description": "Sophie is an amazing dog",
-       "photos": [
-         {
-           "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-           "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-           "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-           "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
-         }
-       ],
-       "status": "adoptable",
-       "published_at": "2018-12-22T20:31:32+0000",
-       "contact": {
-         "email": "petfindertechsupport@gmail.com",
-         "phone": "111-333-5555, 222-333-5555, 333-333-5353, 111-333-2222",
-         "address": {
-           "address1": "Test address 1",
-           "address2": "Test address 2",
-           "city": "Jersey City",
-           "state": "NJ",
-           "postcode": "07097",
-           "country": "US"
-         }
-       },
-       "price": "free"
-     }
-    ]});
-   return _pets.pets;
+  Future<List<Pet>> getPets(int pageIndex, {String? filterString}) async{
+    final allPets = Pets.fromMap(fakePetsData);
+    List<Pet> pets = [];
+    if(filterString != null && filterString.isNotEmpty){
+      filterString = filterString.toLowerCase();
+      for (var pet in allPets.pets) {
+        if(pet.name.toLowerCase().contains(filterString) || pet.tags.contains(filterString) || pet.type.toLowerCase().contains(filterString) || pet.description.toLowerCase().contains(filterString)){
+          pets.add(pet);
+        }
+      }
+    }else{
+      pets = allPets.pets;
+    }
+
+    if(pets.length > 10){
+      pets  = pets.sublist(10 * pageIndex, (10 * 0)+10);
+    }
+   return pets;
   }
 
 }
