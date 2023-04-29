@@ -3,10 +3,10 @@ import 'dart:math';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:neopop/widgets/buttons/neopop_button/neopop_button.dart';
 import 'package:neopop/widgets/buttons/neopop_tilted_button/neopop_tilted_button.dart';
+import 'package:pet_adoption_hn/pages/image_viewer.dart';
 import 'package:pet_adoption_hn/widgets/custom_card.dart';
 import 'package:pet_adoption_hn/widgets/custom_text.dart';
 
@@ -42,9 +42,14 @@ class _DetailsPageState extends State<DetailsPage> {
                   ),
                   background: Hero(
                     tag: args.heroTag,
-                    child: Image.network(
-                      args.petDetails.photos[0].full,
-                      fit: BoxFit.cover,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/imageViewer', arguments: ImageViewerArguments(imagePath: args.petDetails.photos[0].full));
+                      },
+                      child: Image.network(
+                        args.petDetails.photos[0].full,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
@@ -70,27 +75,36 @@ class _DetailsPageState extends State<DetailsPage> {
                               ),
                               const Divider(),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   CustomText(
                                     'Type: ${args.petDetails.type}',
-                                    style: Theme.of(context).textTheme.titleLarge,
+                                    style:
+                                        Theme.of(context).textTheme.titleLarge,
                                   ),
-                                  CustomText('Gender: ${args.petDetails.gender}',
-                                      style:
-                                      Theme.of(context).textTheme.titleLarge),
+                                  CustomText(
+                                      'Gender: ${args.petDetails.gender}',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleLarge),
                                 ],
                               ),
                               const Divider(),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   CustomText('Age: ${args.petDetails.age}',
-                                      style:
-                                      Theme.of(context).textTheme.titleLarge),
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleLarge),
                                   CustomText(
                                     'Price: ${args.petDetails.price}',
-                                    style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.green),
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .titleLarge
+                                        ?.copyWith(color: Colors.green),
                                   ),
                                 ],
                               ),
@@ -169,7 +183,9 @@ class _DetailsPageState extends State<DetailsPage> {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 48.0,)
+                      const SizedBox(
+                        height: 48.0,
+                      )
                     ],
                   ),
                 ),
@@ -210,7 +226,9 @@ class _DetailsPageState extends State<DetailsPage> {
                           vertical: 15,
                         ),
                         child: CustomText(
-                          adoptedPetsList.contains(args.petDetails) ? 'Already Adopted': 'Adopt me',
+                          adoptedPetsList.contains(args.petDetails)
+                              ? 'Already Adopted'
+                              : 'Adopt me',
                           style: const TextStyle(
                               fontSize: 20.0,
                               color: Colors.black,
@@ -281,32 +299,34 @@ class _DetailsPageState extends State<DetailsPage> {
   }
 
   void _showDialog(BuildContext context, String petName) {
-    showDialog(context: context, builder: (BuildContext context){
-      return  Dialog(
-        elevation: 0,
-        child: Container(
-          height: 100,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              CustomText(
-                "You've now adopted $petName",
-                style: Theme.of(context).textTheme.headlineSmall
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return Dialog(
+            elevation: 0,
+            child: Container(
+              height: 100,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  CustomText("You've now adopted $petName",
+                      style: Theme.of(context).textTheme.headlineSmall),
+                  NeoPopButton(
+                      color: kPlunkColorYellow,
+                      onTapUp: () {},
+                      onTapDown: () {
+                        Navigator.pop(context);
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 24.0, vertical: 12.0),
+                        child: Text('Close'),
+                      )),
+                ],
               ),
-              NeoPopButton(color: kPlunkColorYellow,
-              onTapUp: (){},
-                  onTapDown: (){
-                Navigator.pop(context);
-                  },
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
-                child: Text('Close'),
-              )),
-            ],
-          ),
-        ),
-      );
-    });
+            ),
+          );
+        });
   }
 }
 

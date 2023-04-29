@@ -58,7 +58,7 @@ class CustomListItem extends StatelessWidget {
   }
 
   _getRandomShadowColor() {
-    List<Color> shadowColors = [kShadowColorGrey, kShadowColorWhite, kShadowColorGreen, kShadowColorPurple, kShadowColorNeoPaccha, kShadowColorManna, kShadowColorPinkPong, kShadowColorOrangeSunshine];
+    List<Color> shadowColors = [kShadowColorGreen, kShadowColorPurple, kShadowColorNeoPaccha, kShadowColorManna, kShadowColorPinkPong, kShadowColorOrangeSunshine];
     return shadowColors[math.Random.secure().nextInt(shadowColors.length -1)];
   }
 }

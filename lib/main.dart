@@ -6,6 +6,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:pet_adoption_hn/pages/details.dart';
 import 'package:pet_adoption_hn/pages/history.dart';
 import 'package:pet_adoption_hn/pages/home.dart';
+import 'package:pet_adoption_hn/pages/image_viewer.dart';
 import 'package:pet_adoption_hn/pages/settings.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pet_adoption_hn/provider/get_pets_provider.dart';
@@ -59,7 +60,8 @@ class MyApp extends StatelessWidget {
                 '/': (context) => const HomePage(),
                 '/details': (context) => const DetailsPage(),
                 '/settings': (context) => const SettingsPage(),
-                '/adoptionHistory': (context) => const HistoryPage()
+                '/adoptionHistory': (context) => const HistoryPage(),
+                '/imageViewer': (context) => const ImageViewer()
               },
             ),
           );
