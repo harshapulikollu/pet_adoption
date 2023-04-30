@@ -6,7 +6,6 @@ import 'package:pet_adoption_hn/pages/history.dart';
 import 'package:pet_adoption_hn/pages/home.dart';
 import 'package:pet_adoption_hn/pages/image_viewer.dart';
 import 'package:pet_adoption_hn/pages/settings.dart';
-import 'package:pet_adoption_hn/provider/get_pets_provider.dart';
 import 'package:pet_adoption_hn/repository/get_pets_repository.dart';
 
 import 'cubit/home_cubit.dart';
@@ -21,8 +20,7 @@ class MyApp extends StatelessWidget {
         builder: (context, box, child) {
           final isDarkMode = box.get('isDarkModeEnabled', defaultValue: false);
           return BlocProvider(
-            create: (context) => HomeCubit(
-                GetPetsImp(getPetsRepository: GetPetsRepositoryImp())),
+            create: (context) => HomeCubit(GetPetsRepositoryImp()),
             child: MaterialApp(
               title: 'Pet Adoption App',
               debugShowCheckedModeBanner: false,

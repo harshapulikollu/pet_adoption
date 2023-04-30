@@ -1,17 +1,15 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-
 import '../model/pet.dart';
-import '../provider/get_pets_provider_interface.dart';
+import '../repository/get_pets_repository_interface.dart';
 
 part 'home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
-  final GetPetsProviderInterface _getPetsProvider;
-
+  final GetPetsInterface _getPetsRepository;
   HomeCubit(
-    this._getPetsProvider,
+    this._getPetsRepository,
   ) : super(HomeInitial()) {
     getPets(pageIndex: 0, filterString: '');
   }
@@ -43,7 +41,7 @@ class HomeCubit extends Cubit<HomeState> {
       }
       try {
         if (!_reachedLast) {
-          final response = await _getPetsProvider.getPets(_pageIndex,
+          final response = await _getPetsRepository.getPets(_pageIndex,
               filterString: _filteredString);
           if (response.length < 10) {
             _reachedLast = true;
