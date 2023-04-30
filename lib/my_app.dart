@@ -22,8 +22,7 @@ class MyApp extends StatelessWidget {
           final isDarkMode = box.get('isDarkModeEnabled', defaultValue: false);
           return BlocProvider(
             create: (context) => HomeCubit(
-                getPetsProvider:
-                    GetPetsImp(getPetsRepository: GetPetsRepositoryImp())),
+                GetPetsImp(getPetsRepository: GetPetsRepositoryImp())),
             child: MaterialApp(
               title: 'Pet Adoption App',
               debugShowCheckedModeBanner: false,
