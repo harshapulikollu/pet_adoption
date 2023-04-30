@@ -16,7 +16,7 @@ class HomeCubit extends Cubit<HomeState> {
 
   int _pageIndex = 0;
   String _filteredString = '';
-  late List<Pet> _pets;
+  List<Pet> _pets = [];
   bool _reachedLast = false;
   bool _isLoading = false;
 
@@ -25,7 +25,6 @@ class HomeCubit extends Cubit<HomeState> {
 
   /// method to get the list of [Pet] with pagination
   Future<void> getPets({int? pageIndex, String? filterString}) async {
-    _pets = [];
     emit(HomeLoading());
     if (!_isLoading) {
       _isLoading = true;
