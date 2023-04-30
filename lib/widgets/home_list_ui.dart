@@ -14,7 +14,7 @@ class HomeListUI extends StatelessWidget {
   Widget build(BuildContext context) {
     return RefreshIndicator(
       onRefresh: () async {
-        context.read<HomeCubit>().getPets(pageIndex: 0, filterString: '');
+        context.read<HomeCubit>().getPets(pageIndex: 0);
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(
