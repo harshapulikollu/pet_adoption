@@ -37,6 +37,6 @@ class HomeListView extends StatelessWidget {
         debugPrint('reachedLast');
       }
     }
-    return true;
+    return false;
   }
 }
