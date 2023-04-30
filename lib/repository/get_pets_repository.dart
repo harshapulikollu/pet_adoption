@@ -6,6 +6,7 @@ import '../utils/fake_pets_data.dart';
 /// class that implements the interface[GetPetsInterface] to get list of [Pets]
 /// we FAKE API call, hardcoded [fakePetsData] gives us [JSON] response.
 /// we shuffle the response to fake like data is being changed.
+/// limit was hardcoded to 10 items.
 class GetPetsRepositoryImp extends GetPetsInterface {
   @override
   Future<List<Pet>> getPets(int pageIndex, {String? filterString}) async {

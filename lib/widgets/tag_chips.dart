@@ -12,7 +12,7 @@ class TagChips extends StatelessWidget {
     return Wrap(
       children: tags
           .map((e) => Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 4.0),
               child: Chip(
                 label: CustomText(e),
               )))

@@ -32,58 +32,59 @@ class _CustomListItemState extends State<CustomListItem> {
                     shadowColor: _shadowColor));
           },
           shadowColor: _shadowColor,
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: 100,
-                height: 135,
-                child: Hero(
-                    tag: widget.pet.id.toString(),
-                    child: Image.asset(
-                      widget.pet.photos[0].small,
-                      fit: BoxFit.cover,
-                    )),
-              ),
-              const SizedBox(
-                width: 8.0,
-              ),
-              Flexible(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        CustomText(
-                          widget.pet.name,
-                          style: Theme.of(context).textTheme.headlineMedium,
-                        ),
-                        const Spacer(),
-                        CustomText(
-                          widget.pet.type,
-                          style: Theme.of(context).textTheme.titleSmall,
-                        ),
-                        const SizedBox(width: 8.0,)
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 4.0,
-                    ),
-                    CustomText(
-                      widget.pet.description,
-                      style: Theme.of(context).textTheme.headlineSmall,
-                    ),
-                    const SizedBox(
-                      height: 4.0,
-                    ),
-                    TagChips(tags: widget.pet.tags
-                        .sublist(0, 3),),
-                  ],
+          child: IntrinsicHeight(
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                SizedBox(
+                  width: 100,
+                  child: Hero(
+                      tag: widget.pet.id.toString(),
+                      child: Image.asset(
+                        widget.pet.photos[0].small,
+                        fit: BoxFit.fill,
+                      )),
                 ),
-              )
-            ],
+                const SizedBox(
+                  width: 8.0,
+                ),
+                Flexible(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          CustomText(
+                            widget.pet.name,
+                            style: Theme.of(context).textTheme.headlineMedium,
+                          ),
+                          const Spacer(),
+                          CustomText(
+                            widget.pet.type,
+                            style: Theme.of(context).textTheme.titleSmall,
+                          ),
+                          const SizedBox(width: 8.0,)
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 4.0,
+                      ),
+                      CustomText(
+                        widget.pet.description,
+                        style: Theme.of(context).textTheme.headlineSmall,
+                      ),
+                      const SizedBox(
+                        height: 4.0,
+                      ),
+                      TagChips(tags: widget.pet.tags
+                          .sublist(0, 3),),
+                    ],
+                  ),
+                )
+              ],
+            ),
           )),
     );
   }
