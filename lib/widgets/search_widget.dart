@@ -38,8 +38,9 @@ class _SearchWidgetState extends State<SearchWidget> {
         padding: const EdgeInsets.all(4.0),
         child: TextField(
           decoration: InputDecoration(
+            isDense: true,
             border: InputBorder.none,
-            hintText: 'Search with name or type etc..',
+            hintText: 'Search with name or type or tags..',
             hintStyle: GoogleFonts.caveat(fontSize: 20.0),
             prefixIcon: const Icon(Icons.search),
           ),
