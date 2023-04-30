@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pet_adoption_hn/cubit/home_cubit.dart';
 import 'package:pet_adoption_hn/model/pet.dart';
 
+import 'custom_text.dart';
 import 'list_item.dart';
 
 class HomeListView extends StatelessWidget {
@@ -15,7 +16,7 @@ class HomeListView extends StatelessWidget {
         onNotification: (ScrollNotification scrollInfo) {
           return _onScrollNotification(scrollInfo, context);
         },
-        child: ListView.builder(
+        child: pets.isEmpty ? Center(child: CustomText('Nothing found to display here...', style: Theme.of(context).textTheme.headlineSmall,)) : ListView.builder(
           itemBuilder: (BuildContext context, int index) {
             return CustomListItem(
               pet: pets[index],
