@@ -7,7 +7,6 @@ import '../widgets/adopt_button.dart';
 import '../widgets/confetti_ui.dart';
 import '../widgets/description_card.dart';
 import '../widgets/hero_image.dart';
-import '../widgets/pet_description.dart';
 
 class DetailsPage extends StatefulWidget {
   const DetailsPage({Key? key}) : super(key: key);

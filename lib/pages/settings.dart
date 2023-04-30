@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../widgets/credits_text.dart';
 import '../widgets/custom_text.dart';
-import '../widgets/theme_switcher_button.dart';
 import '../widgets/theme_switcher_list_tile.dart';
 
 class SettingsPage extends StatelessWidget {
