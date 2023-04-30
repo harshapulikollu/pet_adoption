@@ -19,39 +19,42 @@ class HomeCubit extends Cubit<HomeState> {
   int _pageIndex = 0;
   String _filteredString = '';
   List<Pet> _pets = [];
-  bool reachedLast = false;
-  bool isLoading = false;
+  bool _reachedLast = false;
+  bool _isLoading = false;
+
+  bool get reachedLast => _reachedLast;
+  bool get isLoading => _isLoading;
 
   Future<void> getPets({int? pageIndex, String? filterString}) async {
     emit(HomeLoading());
-    if (!isLoading) {
-      isLoading = true;
+    if (!_isLoading) {
+      _isLoading = true;
       if (pageIndex != null) {
         _pageIndex = pageIndex;
         _pets.clear();
-        reachedLast = false;
+        _reachedLast = false;
       } else {
         _pageIndex++;
       }
       if (filterString != null) {
         _filteredString = filterString;
         _pets.clear();
-        reachedLast = false;
+        _reachedLast = false;
       }
       try {
-        if (!reachedLast) {
+        if (!_reachedLast) {
           final response = await _getPetsProvider.getPets(_pageIndex,
               filterString: _filteredString);
           if (response.length < 10) {
-            reachedLast = true;
+            _reachedLast = true;
           }
           _pets.addAll(response);
-          isLoading = false;
+          _isLoading = false;
           emit(HomeLoadedSuccessfully(responseApi: _pets));
         }
       } catch (e) {
         debugPrint('error $e');
-        isLoading = false;
+        _isLoading = false;
         emit(HomeLoadingFailed());
       }
     }
