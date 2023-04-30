@@ -1,6 +1,5 @@
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
-import 'package:pet_adoption_hn/widgets/custom_text.dart';
 
 import '../model/pet.dart';
 import '../widgets/adopt_button.dart';
@@ -8,6 +7,7 @@ import '../widgets/confetti_ui.dart';
 import '../widgets/description_card.dart';
 import '../widgets/hero_image.dart';
 import '../widgets/navigate_back_button.dart';
+import '../widgets/pet_name_with_shadow.dart';
 
 class DetailsPage extends StatefulWidget {
   const DetailsPage({Key? key}) : super(key: key);
@@ -33,9 +33,8 @@ class _DetailsPageState extends State<DetailsPage> {
                 expandedHeight: 250.0,
                 leading: const NavigateBackButton(),
                 flexibleSpace: FlexibleSpaceBar(
-                  title: CustomText(
-                    args.petDetails.name,
-                    style: Theme.of(context).textTheme.headlineLarge,
+                  title: PetNameWithShadow(
+                    name: args.petDetails.name,
                   ),
                   background: HeroImage(
                     heroTag: args.heroTag,
@@ -44,7 +43,8 @@ class _DetailsPageState extends State<DetailsPage> {
                 ),
               ),
               SliverToBoxAdapter(
-                child: DescriptionCard(petDetails: args.petDetails, shadowColor: args.shadowColor),
+                child: DescriptionCard(
+                    petDetails: args.petDetails, shadowColor: args.shadowColor),
               ),
             ],
           ),
