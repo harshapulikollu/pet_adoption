@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pet_adoption_hn/pages/details.dart';
 import 'package:pet_adoption_hn/widgets/custom_card.dart';
+import 'package:pet_adoption_hn/widgets/tag_chips.dart';
 
 import '../model/pet.dart' as pet_model;
 import '../utils/colors.dart';
@@ -53,7 +54,7 @@ class _CustomListItemState extends State<CustomListItem> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CustomText(
-                      widget.pet.name + widget.pet.id.toString(),
+                      widget.pet.name,
                       style: Theme.of(context).textTheme.headlineMedium,
                     ),
                     const SizedBox(
@@ -66,18 +67,8 @@ class _CustomListItemState extends State<CustomListItem> {
                     const SizedBox(
                       height: 4.0,
                     ),
-                    Wrap(
-                      children: widget.pet.tags
-                          .sublist(0, 3)
-                          .map((e) => Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 4.0),
-                                child: Chip(
-                                  label: Text(e),
-                                ),
-                              ))
-                          .toList(),
-                    ),
+                    TagChips(tags: widget.pet.tags
+                        .sublist(0, 3),),
                   ],
                 ),
               )

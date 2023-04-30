@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/credits_text.dart';
 import '../widgets/custom_text.dart';
 import '../widgets/theme_switcher_button.dart';
+import '../widgets/theme_switcher_list_tile.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -29,20 +30,10 @@ class SettingsPage extends StatelessWidget {
           ),
         ),
         body: Column(
-          children: [
-            ListTile(
-              title: CustomText(
-                'App theme',
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-              subtitle: CustomText(
-                'Switch app theme by selecting your preferred theme mode',
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-              trailing: const ThemeSwitcherButton(),
-            ),
-            const SizedBox(height: 48.0,),
-            const CreditsText(),
+          children: const [
+            ThemeSwitcherListTile(),
+             SizedBox(height: 48.0,),
+             CreditsText(),
           ],
         ),
       ),

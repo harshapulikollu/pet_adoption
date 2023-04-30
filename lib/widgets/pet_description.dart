@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:pet_adoption_hn/widgets/gender_widget.dart';
+import 'package:pet_adoption_hn/widgets/tag_chips.dart';
 
 import '../model/pet.dart';
+import 'contact_details.dart';
 import 'custom_card.dart';
 import 'custom_text.dart';
 
@@ -10,6 +13,7 @@ class PetDescription extends StatelessWidget {
       : super(key: key);
   final Pet petDetails;
   final Color shadowColor;
+
   @override
   Widget build(BuildContext context) {
     return CustomCard(
@@ -31,7 +35,7 @@ class PetDescription extends StatelessWidget {
                   'Type: ${petDetails.type}',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
-                CustomText('Gender: ${petDetails.gender}',
+                CustomText('Age: ${petDetails.age}',
                     style: Theme.of(context).textTheme.titleLarge),
               ],
             ),
@@ -39,8 +43,7 @@ class PetDescription extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CustomText('Age: ${petDetails.age}',
-                    style: Theme.of(context).textTheme.titleLarge),
+                GenderWidget(gender: petDetails.gender),
                 CustomText(
                   'Price: ${petDetails.price}',
                   style: Theme.of(context)
@@ -51,69 +54,12 @@ class PetDescription extends StatelessWidget {
               ],
             ),
             const Divider(),
-            Wrap(
-              children: petDetails.tags
-                  .map((e) => Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                      child: Chip(
-                        label: Text(e),
-                      )))
-                  .toList(),
-            ),
+            TagChips(tags: petDetails.tags),
             const SizedBox(
               height: 8.0,
             ),
             const Divider(),
-            const CustomText(
-              ' Contact:',
-              style: TextStyle(fontSize: 18.0),
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
-            Row(
-              children: [
-                const Icon(Icons.email),
-                const SizedBox(
-                  width: 8.0,
-                ),
-                CustomText(
-                  petDetails.contact.email,
-                  style: Theme.of(context).textTheme.titleLarge,
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
-            Row(
-              children: [
-                const Icon(Icons.phone),
-                const SizedBox(
-                  width: 8.0,
-                ),
-                Flexible(
-                    child: CustomText(petDetails.contact.phone,
-                        style: Theme.of(context).textTheme.titleLarge)),
-              ],
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
-            Row(
-              children: [
-                const Icon(Icons.pin_drop),
-                const SizedBox(
-                  width: 8.0,
-                ),
-                CustomText(
-                    '${petDetails.contact.address.address1}, ${petDetails.contact.address.city}, ${petDetails.contact.address.state}, ${petDetails.contact.address.country}',
-                    style: Theme.of(context).textTheme.titleLarge),
-              ],
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
+            ContactDetails(contact: petDetails.contact),
           ],
         ),
       ),

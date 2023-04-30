@@ -5,6 +5,7 @@ import 'package:pet_adoption_hn/widgets/custom_text.dart';
 import '../model/pet.dart';
 import '../widgets/adopt_button.dart';
 import '../widgets/confetti_ui.dart';
+import '../widgets/description_card.dart';
 import '../widgets/hero_image.dart';
 import '../widgets/pet_description.dart';
 
@@ -42,21 +43,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ),
               ),
               SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      PetDescription(
-                        petDetails: args.petDetails,
-                        shadowColor: args.shadowColor,
-                      ),
-                      const SizedBox(
-                        height: 48.0,
-                      )
-                    ],
-                  ),
-                ),
+                child: DescriptionCard(petDetails: args.petDetails, shadowColor: args.shadowColor),
               ),
             ],
           ),

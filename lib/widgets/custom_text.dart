@@ -7,6 +7,6 @@ class CustomText extends StatelessWidget {
   final TextStyle? style;
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: GoogleFonts.caveat(textStyle: style),);
+    return Text(text, style: GoogleFonts.caveat(textStyle: style), textAlign: TextAlign.start,);
   }
 }
