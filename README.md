@@ -1,6 +1,7 @@
 # pet_adoption_hn
 
 A pet adoption app developed by [Harsha Pulikollu](https://www.linkedin.com/in/harshapulikollu/) as an assignment for Nymble.
+App UI designs was bit inspired from [CRED](https://cred.club/) and [GUMROAD](https://gumroad.com/)
 
 ## Usage
 User can view list of pets in a listview.
