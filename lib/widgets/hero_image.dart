@@ -14,7 +14,7 @@ class HeroImage extends StatelessWidget {
       child: GestureDetector(
         onTap: () {
           Navigator.pushNamed(context, '/imageViewer',
-              arguments: ImageViewerArguments(imagePath: imageUrl));
+              arguments: ImageViewerArguments(imagePath: imageUrl, heroTag: heroTag));
         },
         child: Image.asset(
           imageUrl,

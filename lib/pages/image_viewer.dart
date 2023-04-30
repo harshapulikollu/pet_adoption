@@ -11,8 +11,11 @@ class ImageViewer extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          PhotoView(
-            imageProvider: AssetImage(args.imagePath),
+          Hero(
+            tag: args.heroTag,
+            child: PhotoView(
+              imageProvider: AssetImage(args.imagePath),
+            ),
           ),
           Align(
             alignment: Alignment.topLeft,
@@ -34,5 +37,6 @@ class ImageViewer extends StatelessWidget {
 
 class ImageViewerArguments {
   final String imagePath;
-  ImageViewerArguments({required this.imagePath});
+  final String heroTag;
+  ImageViewerArguments({required this.imagePath, required this.heroTag});
 }
