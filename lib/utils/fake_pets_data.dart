@@ -1,8 +1,8 @@
 Map<String, dynamic> fakePetsData = {"pets": [
   {
     "id": 1,
-    "type": "bear",
-    "species": "bear",
+    "type": "Bear",
+    "species": "Bear",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1927,10 +1927,10 @@ Map<String, dynamic> fakePetsData = {"pets": [
     "description": "Lucy is an amazing koala",
     "photos": [
       {
-        "small": "assets/pets/Koala2.jpg",
-        "medium": "assets/pets/Koala2.jpg",
-        "large": "assets/pets/Koala2.jpg",
-        "full": "assets/pets/Koala2.jpg"
+        "small": "assets/pets/koala2.jpg",
+        "medium": "assets/pets/koala2.jpg",
+        "large": "assets/pets/koala2.jpg",
+        "full": "assets/pets/koala2.jpg"
       }
     ],
     "status": "adoptable",
@@ -3617,10 +3617,10 @@ Map<String, dynamic> fakePetsData = {"pets": [
     "description": "Phoebe is an amazing koala",
     "photos": [
       {
-        "small": "assets/pets/Koala2.jpg",
-        "medium": "assets/pets/Koala2.jpg",
-        "large": "assets/pets/Koala2.jpg",
-        "full": "assets/pets/Koala2.jpg"
+        "small": "assets/pets/koala2.jpg",
+        "medium": "assets/pets/koala2.jpg",
+        "large": "assets/pets/koala2.jpg",
+        "full": "assets/pets/koala2.jpg"
       }
     ],
     "status": "adoptable",

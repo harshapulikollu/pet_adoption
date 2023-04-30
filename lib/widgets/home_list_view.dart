@@ -17,7 +17,6 @@ class HomeListView extends StatelessWidget {
         },
         child: ListView.builder(
           itemBuilder: (BuildContext context, int index) {
-            debugPrint('index $index, petsId: ${pets[index].id}');
             return CustomListItem(
               pet: pets[index],
             );

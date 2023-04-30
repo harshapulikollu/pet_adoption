@@ -14,7 +14,7 @@ class ThemeSwitcherButton extends StatelessWidget {
     return ValueListenableBuilder(
         valueListenable: Hive.box('app_settings').listenable(),
         builder: (context, box, child) {
-          final isDarkMode = box.get('isDarkModeEnabled', defaultValue: true);
+          final isDarkMode = box.get('isDarkModeEnabled', defaultValue: false);
           return NeoPopButton(
             color: isDarkMode ?  kSecondaryButtonLightColor : kPrimaryButtonColor,
             bottomShadowColor: isDarkMode ? kShadowColorDarkGreen : kShadowColorGrey,

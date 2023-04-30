@@ -53,9 +53,19 @@ class _CustomListItemState extends State<CustomListItem> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CustomText(
-                      widget.pet.name,
-                      style: Theme.of(context).textTheme.headlineMedium,
+                    Row(
+                      children: [
+                        CustomText(
+                          widget.pet.name,
+                          style: Theme.of(context).textTheme.headlineMedium,
+                        ),
+                        const Spacer(),
+                        CustomText(
+                          widget.pet.type,
+                          style: Theme.of(context).textTheme.titleSmall,
+                        ),
+                        const SizedBox(width: 8.0,)
+                      ],
                     ),
                     const SizedBox(
                       height: 4.0,
