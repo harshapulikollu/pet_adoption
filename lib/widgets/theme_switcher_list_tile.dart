@@ -3,6 +3,7 @@ import 'package:pet_adoption_hn/widgets/theme_switcher_button.dart';
 
 import 'custom_text.dart';
 
+/// Wrapper widget for the theme switcher with [ListView]
 class ThemeSwitcherListTile extends StatelessWidget {
   const ThemeSwitcherListTile({Key? key}) : super(key: key);
 

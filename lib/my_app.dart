@@ -10,6 +10,7 @@ import 'package:pet_adoption_hn/repository/get_pets_repository.dart';
 
 import 'cubit/home_cubit.dart';
 
+/// initial Widget of the app called by [main] method
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

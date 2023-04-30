@@ -6,6 +6,7 @@ import '../cubit/home_cubit.dart';
 import '../model/pet.dart';
 import 'home_list_view.dart';
 
+/// Wrapper widget for [HomePage] UI with [SearchWidget] and [ListView]
 class HomeListUI extends StatelessWidget {
   const HomeListUI({Key? key, required this.pets}) : super(key: key);
   final List<Pet> pets;

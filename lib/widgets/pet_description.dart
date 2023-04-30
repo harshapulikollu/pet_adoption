@@ -7,6 +7,7 @@ import 'contact_details.dart';
 import 'custom_card.dart';
 import 'custom_text.dart';
 
+/// Widget to display pet details
 class PetDescription extends StatelessWidget {
   const PetDescription(
       {Key? key, required this.petDetails, required this.shadowColor})

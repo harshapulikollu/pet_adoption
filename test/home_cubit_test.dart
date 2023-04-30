@@ -4,6 +4,9 @@ import 'package:pet_adoption_hn/cubit/home_cubit.dart';
 import 'package:pet_adoption_hn/model/pet.dart';
 import 'package:pet_adoption_hn/repository/get_pets_repository.dart';
 
+/// File to perform UNIT TEST on [HomeCubit]
+
+/// mocking repository using [Mocktail]
 class MockGetPetsRepositoryImp extends Mock implements GetPetsRepositoryImp {}
 
 void main() {

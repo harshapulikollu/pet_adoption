@@ -4,6 +4,7 @@ import 'package:neopop/widgets/cards/neopop_card.dart';
 
 import '../utils/colors.dart';
 
+/// Wrapper widget for [NeoPopCard] to support dark and light themes
 class CustomCard extends StatelessWidget {
   const CustomCard({Key? key, required this.child, this.shadowColor, this.onTap}) : super(key: key);
   final Widget child;

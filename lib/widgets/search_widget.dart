@@ -4,6 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'custom_card.dart';
 
+/// wrapper Widget for Search [TextField] to filter list items.
+/// We use [cancellableOperation] to debounce the filtering/searching of pets
+/// User can search using [Name], [Type], [Tags], [Description]
 class SearchWidget extends StatefulWidget {
   const SearchWidget({Key? key, required this.onChanged}) : super(key: key);
   final void Function(String value) onChanged;

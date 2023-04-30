@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 
+/// Page to display Pet image with zoom in and out interaction
 class ImageViewer extends StatelessWidget {
   const ImageViewer({Key? key}) : super(key: key);
 

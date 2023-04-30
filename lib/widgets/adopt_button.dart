@@ -9,6 +9,7 @@ import '../model/pet.dart';
 import '../utils/colors.dart';
 import 'custom_text.dart';
 
+/// Button with shimmer effect, Thanks to [Neopop] from CRED app theme
 class AdoptButton extends StatelessWidget {
   const AdoptButton(
       {Key? key, required this.petDetails, required this.confettiController})

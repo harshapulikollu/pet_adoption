@@ -6,6 +6,7 @@ import 'package:neopop/widgets/buttons/neopop_button/neopop_button.dart';
 import '../utils/colors.dart';
 import 'custom_text.dart';
 
+/// Widget for [Theme] switcher button based on selected theme
 class ThemeSwitcherButton extends StatelessWidget {
   const ThemeSwitcherButton({Key? key}) : super(key: key);
 
