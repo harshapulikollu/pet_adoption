@@ -7,6 +7,7 @@ import '../widgets/adopt_button.dart';
 import '../widgets/confetti_ui.dart';
 import '../widgets/description_card.dart';
 import '../widgets/hero_image.dart';
+import '../widgets/navigate_back_button.dart';
 
 class DetailsPage extends StatefulWidget {
   const DetailsPage({Key? key}) : super(key: key);
@@ -30,6 +31,7 @@ class _DetailsPageState extends State<DetailsPage> {
             slivers: [
               SliverAppBar(
                 expandedHeight: 250.0,
+                leading: const NavigateBackButton(),
                 flexibleSpace: FlexibleSpaceBar(
                   title: CustomText(
                     args.petDetails.name,
