@@ -40,8 +40,8 @@ class _CustomListItemState extends State<CustomListItem> {
                 height: 135,
                 child: Hero(
                     tag: widget.pet.id.toString(),
-                    child: Image.network(
-                      widget.pet.photos[0].full,
+                    child: Image.asset(
+                      widget.pet.photos[0].small,
                       fit: BoxFit.cover,
                     )),
               ),

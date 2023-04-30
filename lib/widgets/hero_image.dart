@@ -16,7 +16,7 @@ class HeroImage extends StatelessWidget {
           Navigator.pushNamed(context, '/imageViewer',
               arguments: ImageViewerArguments(imagePath: imageUrl));
         },
-        child: Image.network(
+        child: Image.asset(
           imageUrl,
           fit: BoxFit.cover,
         ),

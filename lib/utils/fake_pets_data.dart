@@ -1,8 +1,8 @@
 Map<String, dynamic> fakePetsData = {"pets": [
   {
     "id": 1,
-    "type": "cat",
-    "species": "Dog",
+    "type": "bear",
+    "species": "bear",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -16,7 +16,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
     },
     "age": "Young",
     "gender": "Male",
-    "size": "Medium",
+    "size": "Large",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -38,14 +38,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Bantu",
+    "description": "Bantu is an amazing bear",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/bear1.jpg",
+        "medium": "assets/pets/bear1.jpg",
+        "large": "assets/pets/bear1.jpg",
+        "full": "assets/pets/bear1.jpg"
       }
     ],
     "status": "adoptable",
@@ -66,8 +66,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 2,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Cat",
+    "species": "Cat",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -79,8 +79,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
+    "age": "Old",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -103,14 +103,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Sophie",
-    "description": "Sophie is an amazing dog",
+    "name": "Olly",
+    "description": "olly is an amazing cat",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/cat1.jpg",
+        "medium": "assets/pets/cat1.jpg",
+        "large": "assets/pets/cat1.jpg",
+        "full": "assets/pets/cat1.jpg"
       }
     ],
     "status": "adoptable",
@@ -131,8 +131,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 3,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Cat",
+    "species": "Cat",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -168,14 +168,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Piers",
+    "description": "Piers is an amazing cat",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/cat2.jpg",
+        "medium": "assets/pets/cat2.jpg",
+        "large": "assets/pets/cat2.jpg",
+        "full": "assets/pets/cat2.jpg"
       }
     ],
     "status": "adoptable",
@@ -196,8 +196,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 4,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Koala",
+    "species": "Koala",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -233,14 +233,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Billy",
+    "description": "Billy is an amazing koala",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/koala1.jpg",
+        "medium": "assets/pets/koala1.jpg",
+        "large": "assets/pets/koala1.jpg",
+        "full": "assets/pets/koala1.jpg"
       }
     ],
     "status": "adoptable",
@@ -261,8 +261,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 5,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Koala",
+    "species": "Koala",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -274,9 +274,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "age": "Old",
+    "gender": "Female",
+    "size": "Large",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -298,14 +298,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Hillary",
+    "description": "Hillary is an amazing koala",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/koala2.jpg",
+        "medium": "assets/pets/koala2.jpg",
+        "large": "assets/pets/koala2.jpg",
+        "full": "assets/pets/koala2.jpg"
       }
     ],
     "status": "adoptable",
@@ -326,8 +326,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 6,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Crocodile",
+    "species": "Crocodile",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -363,14 +363,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Croccy",
+    "description": "Croccy is an amazing corcodile",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/croc1.jpg",
+        "medium": "assets/pets/croc1.jpg",
+        "large": "assets/pets/croc1.jpg",
+        "full": "assets/pets/croc1.jpg"
       }
     ],
     "status": "adoptable",
@@ -428,14 +428,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Alferd",
+    "description": "Alferd is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog1.jpg",
+        "medium": "assets/pets/dog1.jpg",
+        "large": "assets/pets/dog1.jpg",
+        "full": "assets/pets/dog1.jpg"
       }
     ],
     "status": "adoptable",
@@ -471,7 +471,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
     },
     "age": "Young",
     "gender": "Male",
-    "size": "Medium",
+    "size": "Large",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -493,14 +493,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Bronson",
+    "description": "Bronson is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog2.jpg",
+        "medium": "assets/pets/dog2.jpg",
+        "large": "assets/pets/dog2.jpg",
+        "full": "assets/pets/dog2.jpg"
       }
     ],
     "status": "adoptable",
@@ -535,7 +535,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "tertiary": null
     },
     "age": "Young",
-    "gender": "Male",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -562,10 +562,10 @@ Map<String, dynamic> fakePetsData = {"pets": [
     "description": "Sophie is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog3.jpg",
+        "medium": "assets/pets/dog3.jpg",
+        "large": "assets/pets/dog3.jpg",
+        "full": "assets/pets/dog3.jpg"
       }
     ],
     "status": "adoptable",
@@ -600,7 +600,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "tertiary": null
     },
     "age": "Young",
-    "gender": "Male",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -623,14 +623,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Julie",
+    "description": "Julie is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog4.jpg",
+        "medium": "assets/pets/dog4.jpg",
+        "large": "assets/pets/dog4.jpg",
+        "full": "assets/pets/dog4.jpg"
       }
     ],
     "status": "adoptable",
@@ -688,14 +688,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Leo",
+    "description": "Leo is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog5.jpg",
+        "medium": "assets/pets/dog5.jpg",
+        "large": "assets/pets/dog5.jpg",
+        "full": "assets/pets/dog5.jpg"
       }
     ],
     "status": "adoptable",
@@ -716,8 +716,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 12,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Fish",
+    "species": "nemo",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -753,14 +753,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Nemo",
+    "description": "Nemo is an amazing fish",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/fish1.jpg",
+        "medium": "assets/pets/fish1.jpg",
+        "large": "assets/pets/fish1.jpg",
+        "full": "assets/pets/fish1.jpg"
       }
     ],
     "status": "adoptable",
@@ -781,8 +781,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 13,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Fish",
+    "species": "nemo",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -794,8 +794,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
+    "age": "Old",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -818,14 +818,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Tori",
+    "description": "Tori is an amazing fish",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/fish2.jpg",
+        "medium": "assets/pets/fish2.jpg",
+        "large": "assets/pets/fish2.jpg",
+        "full": "assets/pets/fish2.jpg"
       }
     ],
     "status": "adoptable",
@@ -846,8 +846,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 14,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Fox",
+    "species": "Cat",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -883,14 +883,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Chief",
+    "description": "Chief is an amazing fox",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/fox1.jpg",
+        "medium": "assets/pets/fox1.jpg",
+        "large": "assets/pets/fox1.jpg",
+        "full": "assets/pets/fox1.jpg"
       }
     ],
     "status": "adoptable",
@@ -911,8 +911,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 15,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Chicken",
+    "species": "Chicken",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -948,14 +948,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Mr. Chicken",
+    "description": "Mr. Chicken is an amazing chicken",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/hen1.jpg",
+        "medium": "assets/pets/hen1.jpg",
+        "large": "assets/pets/hen1.jpg",
+        "full": "assets/pets/hen1.jpg"
       }
     ],
     "status": "adoptable",
@@ -976,8 +976,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 16,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Monkey",
+    "species": "Monkey",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1013,14 +1013,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Sophie",
-    "description": "Sophie is an amazing dog",
+    "name": "Jaggu",
+    "description": "Jaggu is an amazing mokey",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/monkey1.jpg",
+        "medium": "assets/pets/monkey1.jpg",
+        "large": "assets/pets/monkey1.jpg",
+        "full": "assets/pets/monkey1.jpg"
       }
     ],
     "status": "adoptable",
@@ -1041,8 +1041,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 17,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Monkey",
+    "species": "Monkey",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1078,14 +1078,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "AnjaniPutra",
+    "description": "AnjaniPutra is an amazing monkey",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/monkey2.jpg",
+        "medium": "assets/pets/monkey2.jpg",
+        "large": "assets/pets/monkey2.jpg",
+        "full": "assets/pets/monkey2.jpg"
       }
     ],
     "status": "adoptable",
@@ -1106,8 +1106,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 18,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Panda",
+    "species": "Bear",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1119,9 +1119,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "age": "Old",
+    "gender": "Female",
+    "size": "Large",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -1143,14 +1143,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Cali",
+    "description": "Cali is an amazing panda",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/panda1.jpg",
+        "medium": "assets/pets/panda1.jpg",
+        "large": "assets/pets/panda1.jpg",
+        "full": "assets/pets/panda1.jpg"
       }
     ],
     "status": "adoptable",
@@ -1171,8 +1171,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 19,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Panda",
+    "species": "Bear",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1185,7 +1185,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "tertiary": null
     },
     "age": "Young",
-    "gender": "Male",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -1208,14 +1208,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Sassy",
+    "description": "Sassy is an amazing panda",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/panda2.jpg",
+        "medium": "assets/pets/panda2.jpg",
+        "large": "assets/pets/panda2.jpg",
+        "full": "assets/pets/panda2.jpg"
       }
     ],
     "status": "adoptable",
@@ -1236,8 +1236,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 20,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Panda",
+    "species": "Bear",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1273,14 +1273,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Leon",
+    "description": "Leon is an amazing panda",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/panda3.jpg",
+        "medium": "assets/pets/panda3.jpg",
+        "large": "assets/pets/panda3.jpg",
+        "full": "assets/pets/panda3.jpg"
       }
     ],
     "status": "adoptable",
@@ -1301,8 +1301,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 21,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Penguin",
+    "species": "Bird",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1338,14 +1338,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Mr. Pingu",
+    "description": "Mr. Pingu is an amazing penguin",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/penguin1.jpg",
+        "medium": "assets/pets/penguin1.jpg",
+        "large": "assets/pets/penguin1.jpg",
+        "full": "assets/pets/penguin1.jpg"
       }
     ],
     "status": "adoptable",
@@ -1366,8 +1366,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 22,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Penguin",
+    "species": "Bird",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1403,14 +1403,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Ozwald",
+    "description": "Ozwald is an amazing penguin",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/penguin2.jpg",
+        "medium": "assets/pets/penguin2.jpg",
+        "large": "assets/pets/penguin2.jpg",
+        "full": "assets/pets/penguin2.jpg"
       }
     ],
     "status": "adoptable",
@@ -1431,8 +1431,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 23,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Rabbit",
+    "species": "Rabbit",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1468,14 +1468,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Sophie",
-    "description": "Sophie is an amazing dog",
+    "name": "Mandy",
+    "description": "Mandy is an amazing rabbit",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/rabbit.jpg",
+        "medium": "assets/pets/rabbit.jpg",
+        "large": "assets/pets/rabbit.jpg",
+        "full": "assets/pets/rabbit.jpg"
       }
     ],
     "status": "adoptable",
@@ -1496,8 +1496,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 24,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Rabbit",
+    "species": "Rabbit",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1509,9 +1509,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "age": "Old",
+    "gender": "Female",
+    "size": "Small",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -1533,14 +1533,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Iris",
+    "description": "Iris is an amazing rabbit",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/rabbit2.jpg",
+        "medium": "assets/pets/rabbit2.jpg",
+        "large": "assets/pets/rabbit2.jpg",
+        "full": "assets/pets/rabbit2.jpg"
       }
     ],
     "status": "adoptable",
@@ -1561,8 +1561,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 25,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Rabbit",
+    "species": "Rabbit",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1575,8 +1575,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "tertiary": null
     },
     "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "gender": "Female",
+    "size": "Small",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -1598,14 +1598,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Valentine",
+    "description": "Valentine is an amazing rabbit",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/rabbit3.jpg",
+        "medium": "assets/pets/rabbit3.jpg",
+        "large": "assets/pets/rabbit3.jpg",
+        "full": "assets/pets/rabbit3.jpg"
       }
     ],
     "status": "adoptable",
@@ -1626,8 +1626,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 26,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "bear",
+    "species": "bear",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1639,9 +1639,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
+    "age": "Old",
     "gender": "Male",
-    "size": "Medium",
+    "size": "Large",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -1663,14 +1663,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Thor",
+    "description": "Thor is an amazing bear",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/bear1.jpg",
+        "medium": "assets/pets/bear1.jpg",
+        "large": "assets/pets/bear1.jpg",
+        "full": "assets/pets/bear1.jpg"
       }
     ],
     "status": "adoptable",
@@ -1691,8 +1691,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 27,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Cat",
+    "species": "Cat",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1704,8 +1704,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
+    "age": "Old",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -1728,14 +1728,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Jenna",
+    "description": "Jenna is an amazing cat",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/cat1.jpg",
+        "medium": "assets/pets/cat1.jpg",
+        "large": "assets/pets/cat1.jpg",
+        "full": "assets/pets/cat1.jpg"
       }
     ],
     "status": "adoptable",
@@ -1756,8 +1756,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 28,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Cat",
+    "species": "Cat",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1793,14 +1793,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Shelby",
+    "description": "Shelby is an amazing cat",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/cat2.jpg",
+        "medium": "assets/pets/cat2.jpg",
+        "large": "assets/pets/cat2.jpg",
+        "full": "assets/pets/cat2.jpg"
       }
     ],
     "status": "adoptable",
@@ -1821,8 +1821,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 29,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Koala",
+    "species": "Koala",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1858,14 +1858,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Murphy",
+    "description": "Murphy is an amazing koala",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/koala1.jpg",
+        "medium": "assets/pets/koala1.jpg",
+        "large": "assets/pets/koala1.jpg",
+        "full": "assets/pets/koala1.jpg"
       }
     ],
     "status": "adoptable",
@@ -1886,8 +1886,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 30,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Koala",
+    "species": "Koala",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1899,9 +1899,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "age": "Old",
+    "gender": "Female",
+    "size": "Large",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -1923,14 +1923,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Sophie",
-    "description": "Sophie is an amazing dog",
+    "name": "Lucy",
+    "description": "Lucy is an amazing koala",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/Koala2.jpg",
+        "medium": "assets/pets/Koala2.jpg",
+        "large": "assets/pets/Koala2.jpg",
+        "full": "assets/pets/Koala2.jpg"
       }
     ],
     "status": "adoptable",
@@ -1951,8 +1951,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 31,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Crocodile",
+    "species": "Crocodile",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -1988,14 +1988,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Zeus",
+    "description": "Zeus is an amazing corcodile",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/croc1.jpg",
+        "medium": "assets/pets/croc1.jpg",
+        "large": "assets/pets/croc1.jpg",
+        "full": "assets/pets/croc1.jpg"
       }
     ],
     "status": "adoptable",
@@ -2053,14 +2053,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Alex",
+    "description": "Alex is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog1.jpg",
+        "medium": "assets/pets/dog1.jpg",
+        "large": "assets/pets/dog1.jpg",
+        "full": "assets/pets/dog1.jpg"
       }
     ],
     "status": "adoptable",
@@ -2096,7 +2096,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
     },
     "age": "Young",
     "gender": "Male",
-    "size": "Medium",
+    "size": "Small",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -2118,14 +2118,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Romeo",
+    "description": "Romeo is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog2.jpg",
+        "medium": "assets/pets/dog2.jpg",
+        "large": "assets/pets/dog2.jpg",
+        "full": "assets/pets/dog2.jpg"
       }
     ],
     "status": "adoptable",
@@ -2160,7 +2160,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "tertiary": null
     },
     "age": "Young",
-    "gender": "Male",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -2183,14 +2183,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Petunia",
+    "description": "Petunia is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog3.jpg",
+        "medium": "assets/pets/dog3.jpg",
+        "large": "assets/pets/dog3.jpg",
+        "full": "assets/pets/dog3.jpg"
       }
     ],
     "status": "adoptable",
@@ -2225,7 +2225,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "tertiary": null
     },
     "age": "Young",
-    "gender": "Male",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -2248,14 +2248,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Katrina",
+    "description": "Katrina is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog4.jpg",
+        "medium": "assets/pets/dog4.jpg",
+        "large": "assets/pets/dog4.jpg",
+        "full": "assets/pets/dog4.jpg"
       }
     ],
     "status": "adoptable",
@@ -2313,14 +2313,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Simba",
+    "description": "Simba is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog5.jpg",
+        "medium": "assets/pets/dog5.jpg",
+        "large": "assets/pets/dog5.jpg",
+        "full": "assets/pets/dog5.jpg"
       }
     ],
     "status": "adoptable",
@@ -2341,8 +2341,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 37,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Fish",
+    "species": "nemo",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2378,14 +2378,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Sophie",
-    "description": "Sophie is an amazing dog",
+    "name": "Swimmy",
+    "description": "Swimmy is an amazing fish",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/fish1.jpg",
+        "medium": "assets/pets/fish1.jpg",
+        "large": "assets/pets/fish1.jpg",
+        "full": "assets/pets/fish1.jpg"
       }
     ],
     "status": "adoptable",
@@ -2406,8 +2406,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 38,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Fish",
+    "species": "nemo",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2419,8 +2419,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
+    "age": "Old",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -2443,14 +2443,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Lexa",
+    "description": "Lexa is an amazing fish",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/fish2.jpg",
+        "medium": "assets/pets/fish2.jpg",
+        "large": "assets/pets/fish2.jpg",
+        "full": "assets/pets/fish2.jpg"
       }
     ],
     "status": "adoptable",
@@ -2471,8 +2471,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 39,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Fox",
+    "species": "Cat",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2508,14 +2508,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Xander",
+    "description": "Xander is an amazing fox",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/fox1.jpg",
+        "medium": "assets/pets/fox1.jpg",
+        "large": "assets/pets/fox1.jpg",
+        "full": "assets/pets/fox1.jpg"
       }
     ],
     "status": "adoptable",
@@ -2536,8 +2536,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 40,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Chicken",
+    "species": "Chicken",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2573,14 +2573,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Walker",
+    "description": "Walker is an amazing chicken",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/hen1.jpg",
+        "medium": "assets/pets/hen1.jpg",
+        "large": "assets/pets/hen1.jpg",
+        "full": "assets/pets/hen1.jpg"
       }
     ],
     "status": "adoptable",
@@ -2601,8 +2601,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 41,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Monkey",
+    "species": "Monkey",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2638,14 +2638,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Mikey",
+    "description": "Mikey is an amazing mokey",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/monkey1.jpg",
+        "medium": "assets/pets/monkey1.jpg",
+        "large": "assets/pets/monkey1.jpg",
+        "full": "assets/pets/monkey1.jpg"
       }
     ],
     "status": "adoptable",
@@ -2665,9 +2665,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
     "price": "free"
   },
   {
-    "id":42,
-    "type": "Dog",
-    "species": "Dog",
+    "id": 42,
+    "type": "Monkey",
+    "species": "Monkey",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2703,14 +2703,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Trevor",
+    "description": "Trevor is an amazing monkey",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/monkey2.jpg",
+        "medium": "assets/pets/monkey2.jpg",
+        "large": "assets/pets/monkey2.jpg",
+        "full": "assets/pets/monkey2.jpg"
       }
     ],
     "status": "adoptable",
@@ -2731,8 +2731,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 43,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Panda",
+    "species": "Bear",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2744,9 +2744,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "age": "Old",
+    "gender": "Female",
+    "size": "Large",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -2768,14 +2768,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Mars",
+    "description": "Mars is an amazing panda",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/panda1.jpg",
+        "medium": "assets/pets/panda1.jpg",
+        "large": "assets/pets/panda1.jpg",
+        "full": "assets/pets/panda1.jpg"
       }
     ],
     "status": "adoptable",
@@ -2796,8 +2796,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 44,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Panda",
+    "species": "Bear",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2810,7 +2810,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "tertiary": null
     },
     "age": "Young",
-    "gender": "Male",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -2833,14 +2833,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Sophie",
-    "description": "Sophie is an amazing dog",
+    "name": "June",
+    "description": "June is an amazing panda",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/panda2.jpg",
+        "medium": "assets/pets/panda2.jpg",
+        "large": "assets/pets/panda2.jpg",
+        "full": "assets/pets/panda2.jpg"
       }
     ],
     "status": "adoptable",
@@ -2861,8 +2861,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 45,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Panda",
+    "species": "Bear",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2898,14 +2898,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Pax",
+    "description": "Pax is an amazing panda",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/panda3.jpg",
+        "medium": "assets/pets/panda3.jpg",
+        "large": "assets/pets/panda3.jpg",
+        "full": "assets/pets/panda3.jpg"
       }
     ],
     "status": "adoptable",
@@ -2926,8 +2926,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 46,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Penguin",
+    "species": "Bird",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -2963,14 +2963,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Jassy",
+    "description": "Jassy is an amazing penguin",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/penguin1.jpg",
+        "medium": "assets/pets/penguin1.jpg",
+        "large": "assets/pets/penguin1.jpg",
+        "full": "assets/pets/penguin1.jpg"
       }
     ],
     "status": "adoptable",
@@ -2991,8 +2991,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 47,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Penguin",
+    "species": "Bird",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -3028,14 +3028,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Vincent",
+    "description": "Vincent is an amazing penguin",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/penguin2.jpg",
+        "medium": "assets/pets/penguin2.jpg",
+        "large": "assets/pets/penguin2.jpg",
+        "full": "assets/pets/penguin2.jpg"
       }
     ],
     "status": "adoptable",
@@ -3056,8 +3056,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 48,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Rabbit",
+    "species": "Rabbit",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -3093,14 +3093,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Mr. R",
+    "description": "Mandy is an amazing rabbit",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/rabbit.jpg",
+        "medium": "assets/pets/rabbit.jpg",
+        "large": "assets/pets/rabbit.jpg",
+        "full": "assets/pets/rabbit.jpg"
       }
     ],
     "status": "adoptable",
@@ -3121,8 +3121,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 49,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Rabbit",
+    "species": "Rabbit",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -3134,9 +3134,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "age": "Old",
+    "gender": "Female",
+    "size": "Small",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -3158,14 +3158,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Luke",
+    "description": "Luke is an amazing rabbit",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/rabbit2.jpg",
+        "medium": "assets/pets/rabbit2.jpg",
+        "large": "assets/pets/rabbit2.jpg",
+        "full": "assets/pets/rabbit2.jpg"
       }
     ],
     "status": "adoptable",
@@ -3186,8 +3186,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 50,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Rabbit",
+    "species": "Rabbit",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -3200,8 +3200,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "tertiary": null
     },
     "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "gender": "Female",
+    "size": "Small",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -3223,14 +3223,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Dawn",
+    "description": "Dawn is an amazing rabbit",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/rabbit3.jpg",
+        "medium": "assets/pets/rabbit3.jpg",
+        "large": "assets/pets/rabbit3.jpg",
+        "full": "assets/pets/rabbit3.jpg"
       }
     ],
     "status": "adoptable",
@@ -3251,8 +3251,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 51,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Crocodile",
+    "species": "Crocodile",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -3264,9 +3264,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "age": "Old",
+    "gender": "Female",
+    "size": "Large",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -3288,14 +3288,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Sophie",
-    "description": "Sophie is an amazing dog",
+    "name": "Stripes",
+    "description": "Stripes is an amazing corcodile",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/croc1.jpg",
+        "medium": "assets/pets/croc1.jpg",
+        "large": "assets/pets/croc1.jpg",
+        "full": "assets/pets/croc1.jpg"
       }
     ],
     "status": "adoptable",
@@ -3353,14 +3353,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Sammie",
+    "description": "Sammie is an amazing dog",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/dog1.jpg",
+        "medium": "assets/pets/dog1.jpg",
+        "large": "assets/pets/dog1.jpg",
+        "full": "assets/pets/dog1.jpg"
       }
     ],
     "status": "adoptable",
@@ -3381,8 +3381,73 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 53,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Cat",
+    "species": "Cat",
+    "breeds": {
+      "primary": "Akita",
+      "secondary": null,
+      "mixed": false,
+      "unknown": false
+    },
+    "colors": {
+      "primary": null,
+      "secondary": null,
+      "tertiary": null
+    },
+    "age": "Old",
+    "gender": "Female",
+    "size": "Medium",
+    "coat": null,
+    "attributes": {
+      "spayed_neutered": false,
+      "house_trained": true,
+      "declawed": null,
+      "special_needs": true,
+      "shots_current": false
+    },
+    "environment": {
+      "children": false,
+      "dogs": false,
+      "cats": false
+    },
+    "tags": [
+      "Cute",
+      "Intelligent",
+      "Large",
+      "Playful",
+      "Happy",
+      "Affectionate"
+    ],
+    "name": "Pushpa",
+    "description": "Pushpa, attitude is key",
+    "photos": [
+      {
+        "small": "assets/pets/cat1.jpg",
+        "medium": "assets/pets/cat1.jpg",
+        "large": "assets/pets/cat1.jpg",
+        "full": "assets/pets/cat1.jpg"
+      }
+    ],
+    "status": "adoptable",
+    "published_at": "2018-12-22T20:31:32+0000",
+    "contact": {
+      "email": "petfindertechsupport@gmail.com",
+      "phone": "111-333-5555, 222-333-5555, 333-333-5353, 111-333-2222",
+      "address": {
+        "address1": "Test address 1",
+        "address2": "Test address 2",
+        "city": "Jersey City",
+        "state": "NJ",
+        "postcode": "07097",
+        "country": "US"
+      }
+    },
+    "price": "free"
+  },
+  {
+    "id": 53,
+    "type": "Cat",
+    "species": "Cat",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -3418,14 +3483,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Theodore",
+    "description": "Theodore is an amazing cat",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/cat2.jpg",
+        "medium": "assets/pets/cat2.jpg",
+        "large": "assets/pets/cat2.jpg",
+        "full": "assets/pets/cat2.jpg"
       }
     ],
     "status": "adoptable",
@@ -3446,8 +3511,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 54,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Koala",
+    "species": "Koala",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -3460,7 +3525,7 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "tertiary": null
     },
     "age": "Young",
-    "gender": "Male",
+    "gender": "Female",
     "size": "Medium",
     "coat": null,
     "attributes": {
@@ -3483,14 +3548,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Naina",
+    "description": "Naina is an amazing koala",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/koala1.jpg",
+        "medium": "assets/pets/koala1.jpg",
+        "large": "assets/pets/koala1.jpg",
+        "full": "assets/pets/koala1.jpg"
       }
     ],
     "status": "adoptable",
@@ -3511,8 +3576,8 @@ Map<String, dynamic> fakePetsData = {"pets": [
   },
   {
     "id": 55,
-    "type": "Dog",
-    "species": "Dog",
+    "type": "Koala",
+    "species": "Koala",
     "breeds": {
       "primary": "Akita",
       "secondary": null,
@@ -3524,9 +3589,9 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "secondary": null,
       "tertiary": null
     },
-    "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
+    "age": "Old",
+    "gender": "Female",
+    "size": "Large",
     "coat": null,
     "attributes": {
       "spayed_neutered": false,
@@ -3548,79 +3613,14 @@ Map<String, dynamic> fakePetsData = {"pets": [
       "Happy",
       "Affectionate"
     ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
+    "name": "Phoebe",
+    "description": "Phoebe is an amazing koala",
     "photos": [
       {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
-      }
-    ],
-    "status": "adoptable",
-    "published_at": "2018-12-22T20:31:32+0000",
-    "contact": {
-      "email": "petfindertechsupport@gmail.com",
-      "phone": "111-333-5555, 222-333-5555, 333-333-5353, 111-333-2222",
-      "address": {
-        "address1": "Test address 1",
-        "address2": "Test address 2",
-        "city": "Jersey City",
-        "state": "NJ",
-        "postcode": "07097",
-        "country": "US"
-      }
-    },
-    "price": "free"
-  },
-  {
-    "id": 56,
-    "type": "Dog",
-    "species": "Dog",
-    "breeds": {
-      "primary": "Akita",
-      "secondary": null,
-      "mixed": false,
-      "unknown": false
-    },
-    "colors": {
-      "primary": null,
-      "secondary": null,
-      "tertiary": null
-    },
-    "age": "Young",
-    "gender": "Male",
-    "size": "Medium",
-    "coat": null,
-    "attributes": {
-      "spayed_neutered": false,
-      "house_trained": true,
-      "declawed": null,
-      "special_needs": true,
-      "shots_current": false
-    },
-    "environment": {
-      "children": false,
-      "dogs": false,
-      "cats": false
-    },
-    "tags": [
-      "Cute",
-      "Intelligent",
-      "Large",
-      "Playful",
-      "Happy",
-      "Affectionate"
-    ],
-    "name": "Spot",
-    "description": "Spot is an amazing dog",
-    "photos": [
-      {
-        "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-        "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-        "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-        "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
+        "small": "assets/pets/Koala2.jpg",
+        "medium": "assets/pets/Koala2.jpg",
+        "large": "assets/pets/Koala2.jpg",
+        "full": "assets/pets/Koala2.jpg"
       }
     ],
     "status": "adoptable",

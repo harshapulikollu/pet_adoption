@@ -12,7 +12,7 @@ class ImageViewer extends StatelessWidget {
       body: Stack(
         children: [
           PhotoView(
-            imageProvider: NetworkImage(args.imagePath),
+            imageProvider: AssetImage(args.imagePath),
           ),
           Align(
             alignment: Alignment.topLeft,
