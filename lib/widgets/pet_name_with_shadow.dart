@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'custom_text.dart';
 
+/// Widget to display [Pet]'s [name] with [shadow] to the text
 class PetNameWithShadow extends StatelessWidget {
   const PetNameWithShadow({Key? key, required this.name}) : super(key: key);
   final String name;

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../model/pet.dart';
 import 'custom_text.dart';
 
+/// Widget to hold [contact] details of a pet owner in pet details page
 class ContactDetails extends StatelessWidget {
   const ContactDetails({Key? key, required this.contact}) : super(key: key);
   final Contact contact;

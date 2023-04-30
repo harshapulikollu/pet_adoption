@@ -23,6 +23,7 @@ class HomeCubit extends Cubit<HomeState> {
   bool get reachedLast => _reachedLast;
   bool get isLoading => _isLoading;
 
+  /// method to get the list of [Pet] with pagination
   Future<void> getPets({int? pageIndex, String? filterString}) async {
     _pets = [];
     emit(HomeLoading());

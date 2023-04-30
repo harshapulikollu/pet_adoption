@@ -7,6 +7,8 @@ import 'package:pet_adoption_hn/model/pet.dart';
 import 'package:pet_adoption_hn/pages/home.dart';
 import 'package:pet_adoption_hn/repository/get_pets_repository.dart';
 
+/// File to perform WIDGET TEST on [HomePage]
+
 class MockGetPetsRepositoryImp extends Mock implements GetPetsRepositoryImp {}
 
 void main() {

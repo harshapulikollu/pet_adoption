@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+/// Widget to display Credits and source code links
 class CreditsText extends StatelessWidget {
   const CreditsText({Key? key}) : super(key: key);
 

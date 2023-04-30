@@ -1,3 +1,4 @@
+/// fake [JSON] data with list of [Pets] for adoption
 Map<String, dynamic> fakePetsData = {"pets": [
   {
     "id": 1,

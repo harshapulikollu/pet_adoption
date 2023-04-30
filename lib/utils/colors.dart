@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// All the colors and values we use for the app and buttons
 const kPageNavigationDuration = Duration(milliseconds: 300);
 const kPageNavigationCurve = Curves.easeInOut;
 

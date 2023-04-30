@@ -6,6 +6,9 @@ import 'package:pet_adoption_hn/model/pet.dart';
 import 'custom_text.dart';
 import 'list_item.dart';
 
+/// Widget to display [ListView] with [Pagination] in [HomePage]
+/// Initially we fetch 10 items of pets and display them in UI as cards.
+/// We listen to [ScrollNotification] to fetch next 10 items of the list once user scrolls to last of the list.
 class HomeListView extends StatelessWidget {
   const HomeListView({Key? key, required this.pets}) : super(key: key);
   final List<Pet> pets;

@@ -8,6 +8,7 @@ import '../utils/colors.dart';
 import 'custom_text.dart';
 import 'dart:math' as math;
 
+/// Widget to display each [HomePage]'s list item card
 class CustomListItem extends StatefulWidget {
   const CustomListItem({Key? key, required this.pet}) : super(key: key);
   final pet_model.Pet pet;

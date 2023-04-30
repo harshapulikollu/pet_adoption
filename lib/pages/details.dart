@@ -9,6 +9,7 @@ import '../widgets/hero_image.dart';
 import '../widgets/navigate_back_button.dart';
 import '../widgets/pet_name_with_shadow.dart';
 
+/// Page to show details of the [Pet] user selected on [HomePage]
 class DetailsPage extends StatefulWidget {
   const DetailsPage({Key? key}) : super(key: key);
 
@@ -74,6 +75,7 @@ class _DetailsPageState extends State<DetailsPage> {
   }
 }
 
+/// class for the arguments required to [DetailsPage] passed through [Navigator.pushNamed]
 class DetailsPageArguments {
   final Pet petDetails;
   final String heroTag;

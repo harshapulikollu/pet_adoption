@@ -8,6 +8,8 @@ import 'package:hive/hive.dart';
 
 part 'pet.g.dart';
 
+/// [Pets] model with [Hive] type added for the [HiveAdaptors] to store data using [Hive].
+/// To know more about [Hive] follow https://github.com/hivedb/hive
 @HiveType(typeId: 1)
 class Pets extends HiveObject{
   @HiveField(0)

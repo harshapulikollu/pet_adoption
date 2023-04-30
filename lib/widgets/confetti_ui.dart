@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 
+/// Wrapper Widget related to [ConfettiWidget]
 class ConfettiUI extends StatelessWidget {
   const ConfettiUI({Key? key, required this.confettiController})
       : super(key: key);

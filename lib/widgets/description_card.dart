@@ -3,6 +3,7 @@ import 'package:pet_adoption_hn/widgets/pet_description.dart';
 
 import '../model/pet.dart';
 
+/// Wrapper widget to display all the details of pet
 class DescriptionCard extends StatelessWidget {
   const DescriptionCard({Key? key, required this.petDetails, required this.shadowColor}) : super(key: key);
   final Pet petDetails;

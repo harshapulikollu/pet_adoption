@@ -5,6 +5,8 @@ import 'package:pet_adoption_hn/widgets/list_item.dart';
 import '../widgets/custom_text.dart';
 import '../widgets/navigate_back_button.dart';
 
+/// Page to display list of adopted [Pet]
+/// All the adopted [Pets] are saved into local storage using [Hive]
 class HistoryPage extends StatelessWidget {
   const HistoryPage({Key? key}) : super(key: key);
 

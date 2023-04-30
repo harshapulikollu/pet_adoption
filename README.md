@@ -1,16 +1,18 @@
 # pet_adoption_hn
 
-A pet adoption app as an assignment by Nymble
+A pet adoption app developed by [Harsha Pulikollu](https://www.linkedin.com/in/harshapulikollu/) as an assignment for Nymble.
+App UI designs was bit inspired from [CRED](https://cred.club/) and [GUMROAD](https://gumroad.com/)
 
-## Getting Started
+## Usage
+User can view list of pets in a listview.
+Scroll through the list of search for a desired pet and can navigate to details screen of selected pet.
 
-This project is a starting point for a Flutter application.
+User can view pet related details like name, image, age, type of pet, description, contact details of owner, and
+a button to adopt the pet.
 
-A few resources to get you started if this is your first Flutter project:
+Also user can click on the image in details screen to view the pet image in full screen interactive mode.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+User can click adopt me button to adopt the pet and it will be stored in adoption history page, which can be accessed through the history icon button from home page.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+

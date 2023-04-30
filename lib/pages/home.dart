@@ -5,6 +5,8 @@ import 'package:pet_adoption_hn/cubit/home_cubit.dart';
 import '../widgets/appbar_row.dart';
 import '../widgets/home_list_ui.dart';
 
+/// Page to display all the [Pets] in a list
+/// User can click/tap on the card of the desired pet and navigate to [DetailsPage]
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 

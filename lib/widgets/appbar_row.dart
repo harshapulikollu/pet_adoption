@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'custom_text.dart';
 
+/// [Appbar] for [HomePage] which holds title, and two actions buttons for adoption history and settings pages
 class AppBarRow extends StatelessWidget {
   const AppBarRow({Key? key}) : super(key: key);
 

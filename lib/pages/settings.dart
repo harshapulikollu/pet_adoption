@@ -5,6 +5,8 @@ import '../widgets/custom_text.dart';
 import '../widgets/navigate_back_button.dart';
 import '../widgets/theme_switcher_list_tile.dart';
 
+/// Page to display settings like change of app [Theme]
+/// Also holds credits
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
 

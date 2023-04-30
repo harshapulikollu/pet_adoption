@@ -6,6 +6,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'model/pet.dart';
 import 'my_app.dart';
 
+/// First method that runs when app starts
 Future<void> main() async {
   await _initHive();
 
@@ -16,6 +17,7 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
+/// method to [init] [Hive] and registering [HiveAdapters]
 Future<void> _initHive() async {
   await Hive.initFlutter();
   Hive
