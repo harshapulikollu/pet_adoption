@@ -7,58 +7,100 @@ import '../utils/colors.dart';
 import 'custom_text.dart';
 import 'dart:math' as math;
 
-class CustomListItem extends StatelessWidget {
+class CustomListItem extends StatefulWidget {
   const CustomListItem({Key? key, required this.pet}) : super(key: key);
   final pet_model.Pet pet;
 
+  @override
+  State<CustomListItem> createState() => _CustomListItemState();
+}
 
+class _CustomListItemState extends State<CustomListItem> {
+  late Color _shadowColor;
   @override
   Widget build(BuildContext context) {
-    final shadowColor = _getRandomShadowColor();
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 2.0),
       child: CustomCard(
-        onTap: (){
-          Navigator.pushNamed(context, '/details', arguments: DetailsPageArguments(petDetails: pet, heroTag: pet.id.toString(), shadowColor: shadowColor));
-        },
-        shadowColor: shadowColor,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          onTap: () {
+            Navigator.pushNamed(context, '/details',
+                arguments: DetailsPageArguments(
+                    petDetails: widget.pet,
+                    heroTag: widget.pet.id.toString(),
+                    shadowColor: _shadowColor));
+          },
+          shadowColor: _shadowColor,
           child: Row(
             mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(height: 100, width: 100,
-              child: Hero(
-                  tag: pet.id.toString(),
-                  child: Image.network(pet.photos[0].full)),),
+              SizedBox(
+                width: 100,
+                height: 135,
+                child: Hero(
+                    tag: widget.pet.id.toString(),
+                    child: Image.network(
+                      widget.pet.photos[0].full,
+                      fit: BoxFit.cover,
+                    )),
+              ),
+              const SizedBox(
+                width: 8.0,
+              ),
               Flexible(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CustomText(pet.name, style: Theme.of(context).textTheme.headlineMedium,),
-                    const SizedBox(height: 4.0,),
-                    CustomText(pet.description, style: Theme.of(context).textTheme.headlineSmall,),
-                    const SizedBox(height: 4.0,),
+                    CustomText(
+                      widget.pet.name + widget.pet.id.toString(),
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                    const SizedBox(
+                      height: 4.0,
+                    ),
+                    CustomText(
+                      widget.pet.description,
+                      style: Theme.of(context).textTheme.headlineSmall,
+                    ),
+                    const SizedBox(
+                      height: 4.0,
+                    ),
                     Wrap(
-                      children: pet.tags.sublist(0, 3).map((e) => Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 4.0),
-                        child: Chip(label: Text(e),),
-                      )).toList(),
+                      children: widget.pet.tags
+                          .sublist(0, 3)
+                          .map((e) => Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 4.0),
+                                child: Chip(
+                                  label: Text(e),
+                                ),
+                              ))
+                          .toList(),
                     ),
                   ],
                 ),
               )
             ],
-          ),
-        )
-      ),
+          )),
     );
   }
 
-  _getRandomShadowColor() {
-    List<Color> shadowColors = [kShadowColorGreen, kShadowColorPurple, kShadowColorNeoPaccha, kShadowColorManna, kShadowColorPinkPong, kShadowColorOrangeSunshine];
-    return shadowColors[math.Random.secure().nextInt(shadowColors.length -1)];
+  @override
+  void initState() {
+    super.initState();
+    _shadowColor = _getRandomShadowColor();
+  }
+
+  Color _getRandomShadowColor() {
+    List<Color> shadowColors = [
+      kShadowColorGreen,
+      kShadowColorPurple,
+      kShadowColorNeoPaccha,
+      kShadowColorManna,
+      kShadowColorPinkPong,
+      kShadowColorOrangeSunshine
+    ];
+    return shadowColors[math.Random.secure().nextInt(shadowColors.length - 1)];
   }
 }

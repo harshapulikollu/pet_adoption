@@ -21,7 +21,11 @@ class GetPetsRepositoryImp extends GetPetsInterface {
     }
 
     if(pets.length > 10){
-      pets  = pets.sublist(10 * pageIndex, (10 * 0)+10);
+      int startIndex = 10 * pageIndex;
+      if(startIndex > pets.length) return [];
+
+      int endIndex = ((10 * pageIndex)+10) > pets.length ? pets.length : ((10 * pageIndex)+10);
+      pets  = pets.sublist(startIndex, endIndex);
     }
    return pets;
   }

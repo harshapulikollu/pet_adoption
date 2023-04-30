@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/Credits_text.dart';
+import '../widgets/credits_text.dart';
 import '../widgets/custom_text.dart';
 import '../widgets/theme_switcher_button.dart';
 
