@@ -12,9 +12,13 @@ class CreditsText extends StatelessWidget {
     return RichText(
       text: TextSpan(children: [
         TextSpan(
-            text: 'Developed by ', style: GoogleFonts.caveat(color: Colors.amberAccent)),
+            text: 'String ', style: GoogleFonts.caveat()),
         TextSpan(
-          text: 'Harsha Pulikollu. ',
+            text: 'developedBy', style: GoogleFonts.caveat(color: Colors.purpleAccent)),
+        TextSpan(
+            text: ' = ', style: GoogleFonts.caveat()),
+        TextSpan(
+          text: 'Harsha Pulikollu ',
           style: GoogleFonts.caveat(color: Colors.blue, fontSize: 20.0),
           recognizer: TapGestureRecognizer()
             ..onTap = () {
