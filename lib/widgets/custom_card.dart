@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:neopop/widgets/cards/neopop_card.dart';
 
 import '../utils/colors.dart';
@@ -12,21 +11,17 @@ class CustomCard extends StatelessWidget {
   final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
+    bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
     return GestureDetector(
       onTap: onTap,
-      child: ValueListenableBuilder(
-          valueListenable: Hive.box('app_settings').listenable(),
-          builder: (context, box, child1) {
-            final isDarkMode = box.get('isDarkModeEnabled', defaultValue: false);
-            return NeoPopCard(
-              color:
-                  isDarkMode ? kSecondaryButtonLightColor : kPrimaryButtonColor,
-              borderColor: shadowColor ?? (isDarkMode ? kShadowColorDarkGreen : kShadowColorGrey),
-              hShadowColor: shadowColor ?? (isDarkMode ? kShadowColorDarkGreen : kShadowColorGrey),
-              vShadowColor: shadowColor ?? (isDarkMode ? kShadowColorDarkGreen : kShadowColorGrey),
-              child: child,
-            );
-          }),
+      child: NeoPopCard(
+        color:
+        isDarkMode ? kSecondaryButtonLightColor : kPrimaryButtonColor,
+        borderColor: shadowColor ?? (isDarkMode ? kShadowColorDarkGreen : kShadowColorGrey),
+        hShadowColor: shadowColor ?? (isDarkMode ? kShadowColorDarkGreen : kShadowColorGrey),
+        vShadowColor: shadowColor ?? (isDarkMode ? kShadowColorDarkGreen : kShadowColorGrey),
+        child: child,
+      ),
     );
   }
 }

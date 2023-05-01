@@ -12,30 +12,26 @@ class ThemeSwitcherButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder(
-        valueListenable: Hive.box('app_settings').listenable(),
-        builder: (context, box, child) {
-          final isDarkMode = box.get('isDarkModeEnabled', defaultValue: false);
-          return NeoPopButton(
-            color: isDarkMode ?  kSecondaryButtonLightColor : kPrimaryButtonColor,
-            bottomShadowColor: isDarkMode ? kShadowColorDarkGreen : kShadowColorGrey,
-            rightShadowColor: isDarkMode ? kShadowColorGreen : kShadowColorGrey,
-            border: Border.all(
-              color: isDarkMode ? kBorderColorGreen : kShadowColorGrey,
-              width: kButtonBorderWidth,
-            ),
-            onTapUp: () => HapticFeedback.lightImpact(),
-            onTapDown: (){
-              HapticFeedback.lightImpact();
-              box.put('isDarkModeEnabled', !isDarkMode);
-            },
-            child: Padding(
-              padding:
-              const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-              child: CustomText(isDarkMode ? 'Light' : 'Dark'),
-            ),
-          );
-        }
+    bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
+    return NeoPopButton(
+      color: isDarkMode ?  kSecondaryButtonLightColor : kPrimaryButtonColor,
+      bottomShadowColor: isDarkMode ? kShadowColorDarkGreen : kShadowColorGrey,
+      rightShadowColor: isDarkMode ? kShadowColorGreen : kShadowColorGrey,
+      border: Border.all(
+        color: isDarkMode ? kBorderColorGreen : kShadowColorGrey,
+        width: kButtonBorderWidth,
+      ),
+      onTapUp: () => HapticFeedback.lightImpact(),
+      onTapDown: ()async{
+        HapticFeedback.lightImpact();
+        final box = await Hive.openBox('app_settings');
+        box.put('isDarkModeEnabled', !isDarkMode);
+      },
+      child: Padding(
+        padding:
+        const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+        child: CustomText(isDarkMode ? 'Light' : 'Dark'),
+      ),
     );
   }
 }
