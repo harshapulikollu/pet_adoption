@@ -90,7 +90,7 @@ class AdoptButton extends StatelessWidget {
                       child: const Padding(
                         padding: EdgeInsets.symmetric(
                             horizontal: 24.0, vertical: 12.0),
-                        child: Text('Close'),
+                        child: CustomText('Close'),
                       )),
                 ],
               ),
